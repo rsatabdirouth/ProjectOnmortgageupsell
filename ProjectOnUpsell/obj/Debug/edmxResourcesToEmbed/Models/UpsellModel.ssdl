@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UpsellModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Requirement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateOfBirth" Type="date" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PostCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MortgageType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PropertyValue" Type="int" Nullable="false" />
+    <Property Name="LoanValue" Type="int" Nullable="false" />
+    <Property Name="MortgageTerm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RateTerm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Repayment" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PropertyType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CurrentDebt" Type="int" Nullable="false" />
+    <Property Name="EmploymentStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AnnnualIncome" Type="int" Nullable="false" />
+    <Property Name="CreditHistory" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MissedAnyLoan" Type="bit" Nullable="false" />
+    <Property Name="HadBankrupcy" Type="bit" Nullable="false" />
+    <Property Name="AppliedForIVA" Type="bit" Nullable="false" />
+    <Property Name="HadACCJ" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="UpsellModelStoreContainer">
+    <EntitySet Name="Requirement" EntityType="Self.Requirement" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media (max-width: 320px){
+	
+}
+@media (max-width: 360px){
+	.logoicon{
+		width:100% !important;
+	}
+}
+@media (max-width: 480px){
+	.req_call{
+		width:100%;
+	}
+}
+@media (max-width: 640px){
+
+}
+
+@media (max-width: 768px) {
+	
+	.rgform {
+		padding:15px;
+	}
+	.rgform h2 {
+		font-size: 20px;
+	}
+	.footer ul {
+		width: 100%;
+	}
+	.resrightside{
+		padding:20px 0 0 0 !important;
+	}
+	.res_reed{
+		display:block;
+		padding:10px 0 0 0;
+	}
+	.other_body_text p span a{
+		padding-left:0px;
+	}
+	.misslon{
+		padding:0;
+	}
+	.page_rmTitle{
+		width:100%;
+	}
+	.page_rmTitle h1{
+		font-size: 23px;
+		padding: 10px;
+		text-align: center;
+	}
+	.page_tiBg{
+		display:none;
+	}
+	.find_button{
+			margin:10px 0 0 0;
+	}
+}
+@media (max-width: 1024px) {
+	
+	.container {
+		width: 100%;
+	}
+	.logoicon{
+		width:272px;
+		margin:0 auto;
+		padding-bottom:15px;
+	}
+	.close_button{
+		background:none;
+	}
+	.gen_rules a{
+		margin-bottom:15px;
+	}
+	.container2{
+		padding:0;
+	}
+	.child_form{
+		padding:15px;
+	}
+	.resHeader{
+		float:left;
+	}
+}

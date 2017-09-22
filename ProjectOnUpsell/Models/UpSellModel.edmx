@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UpsellModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Requirement">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateOfBirth" Type="date" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PostCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MortgageType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PropertyValue" Type="int" Nullable="false" />
+          <Property Name="LoanValue" Type="int" Nullable="false" />
+          <Property Name="MortgageTerm" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RateTerm" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Repayment" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PropertyType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CurrentDebt" Type="int" Nullable="false" />
+          <Property Name="EmploymentStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AnnnualIncome" Type="int" Nullable="false" />
+          <Property Name="CreditHistory" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MissedAnyLoan" Type="bit" Nullable="false" />
+          <Property Name="HadBankrupcy" Type="bit" Nullable="false" />
+          <Property Name="AppliedForIVA" Type="bit" Nullable="false" />
+          <Property Name="HadACCJ" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="UpsellModelStoreContainer">
+          <EntitySet Name="Requirement" EntityType="Self.Requirement" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UpsellModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Requirement">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PostCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MortgageType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PropertyValue" Type="Int32" Nullable="false" />
+          <Property Name="LoanValue" Type="Int32" Nullable="false" />
+          <Property Name="MortgageTerm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RateTerm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Repayment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PropertyType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CurrentDebt" Type="Int32" Nullable="false" />
+          <Property Name="EmploymentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AnnnualIncome" Type="Int32" Nullable="false" />
+          <Property Name="CreditHistory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MissedAnyLoan" Type="Boolean" Nullable="false" />
+          <Property Name="HadBankrupcy" Type="Boolean" Nullable="false" />
+          <Property Name="AppliedForIVA" Type="Boolean" Nullable="false" />
+          <Property Name="HadACCJ" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="UpsellEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Requirements" EntityType="Self.Requirement" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UpsellModelStoreContainer" CdmEntityContainer="UpsellEntities3">
+          <EntitySetMapping Name="Requirements">
+            <EntityTypeMapping TypeName="UpsellModel.Requirement">
+              <MappingFragment StoreEntitySet="Requirement">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+                <ScalarProperty Name="MortgageType" ColumnName="MortgageType" />
+                <ScalarProperty Name="PropertyValue" ColumnName="PropertyValue" />
+                <ScalarProperty Name="LoanValue" ColumnName="LoanValue" />
+                <ScalarProperty Name="MortgageTerm" ColumnName="MortgageTerm" />
+                <ScalarProperty Name="RateTerm" ColumnName="RateTerm" />
+                <ScalarProperty Name="Repayment" ColumnName="Repayment" />
+                <ScalarProperty Name="PropertyType" ColumnName="PropertyType" />
+                <ScalarProperty Name="CurrentDebt" ColumnName="CurrentDebt" />
+                <ScalarProperty Name="EmploymentStatus" ColumnName="EmploymentStatus" />
+                <ScalarProperty Name="AnnnualIncome" ColumnName="AnnnualIncome" />
+                <ScalarProperty Name="CreditHistory" ColumnName="CreditHistory" />
+                <ScalarProperty Name="MissedAnyLoan" ColumnName="MissedAnyLoan" />
+                <ScalarProperty Name="HadBankrupcy" ColumnName="HadBankrupcy" />
+                <ScalarProperty Name="AppliedForIVA" ColumnName="AppliedForIVA" />
+                <ScalarProperty Name="HadACCJ" ColumnName="HadACCJ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

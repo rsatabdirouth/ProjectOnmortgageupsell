@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UpsellModelStoreContainer" CdmEntityContainer="UpsellEntities3">
+    <EntitySetMapping Name="Requirements">
+      <EntityTypeMapping TypeName="UpsellModel.Requirement">
+        <MappingFragment StoreEntitySet="Requirement">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="MortgageType" ColumnName="MortgageType" />
+          <ScalarProperty Name="PropertyValue" ColumnName="PropertyValue" />
+          <ScalarProperty Name="LoanValue" ColumnName="LoanValue" />
+          <ScalarProperty Name="MortgageTerm" ColumnName="MortgageTerm" />
+          <ScalarProperty Name="RateTerm" ColumnName="RateTerm" />
+          <ScalarProperty Name="Repayment" ColumnName="Repayment" />
+          <ScalarProperty Name="PropertyType" ColumnName="PropertyType" />
+          <ScalarProperty Name="CurrentDebt" ColumnName="CurrentDebt" />
+          <ScalarProperty Name="EmploymentStatus" ColumnName="EmploymentStatus" />
+          <ScalarProperty Name="AnnnualIncome" ColumnName="AnnnualIncome" />
+          <ScalarProperty Name="CreditHistory" ColumnName="CreditHistory" />
+          <ScalarProperty Name="MissedAnyLoan" ColumnName="MissedAnyLoan" />
+          <ScalarProperty Name="HadBankrupcy" ColumnName="HadBankrupcy" />
+          <ScalarProperty Name="AppliedForIVA" ColumnName="AppliedForIVA" />
+          <ScalarProperty Name="HadACCJ" ColumnName="HadACCJ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
